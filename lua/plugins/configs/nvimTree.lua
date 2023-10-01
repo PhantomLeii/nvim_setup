@@ -11,7 +11,6 @@ local settings = {
       disable_netrw = true,
       sort = {
         sorter = "case_sensitive",
-        files_first = true,
       },
       renderer = {
         full_name = true,
