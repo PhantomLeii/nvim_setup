@@ -21,6 +21,7 @@ require("lazy").setup({
   require "plugins.configs.autoPairs",
   require "plugins.configs.mason",
   require "plugins.configs.lspconfig"
+  require "plugins.configs.cmp"
 
   -- LSP
   {
