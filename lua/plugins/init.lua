@@ -20,6 +20,7 @@ require("lazy").setup({
   require "plugins.configs.lualine",
   require "plugins.configs.autoPairs",
   require "plugins.configs.mason",
+  require "plugins.configs.lspconfig"
 
   -- LSP
   {
@@ -46,28 +47,6 @@ require("lazy").setup({
 
       lsp.set_preferences({
         set_lsp_keymaps = false,
-      })
-
-      require("mason").setup()
-      require("mason-lspconfig").setup({
-        ensure_installed = {
-          "html",
-          "cssls",
-          "tsserver",
-          "tailwindcss",
-          "stylelint_lsp",
-          "eslint",
-          "marksman",
-          "astro",
-
-          "rust_analyzer",
-          "pylyzer",
-
-          "solang",
-          
-          "bashls",
-          "lua_ls",
-        },
       })
 
       local cmp = require("cmp")
