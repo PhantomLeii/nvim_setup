@@ -22,6 +22,7 @@ return {
       },
       winbar = {
         lualine_a = { "windows" },
+        lualine_y = { "buffers" }
       },
     }
   end
