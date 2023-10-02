@@ -32,6 +32,7 @@ map("n", "<leader>Q", ":q!<CR>")
 map("n", "<leader>e", ":NvimTreeToggle<CR>")
 map("n", "<leader>t", ":terminal<CR>")
 
+-- Telescope
 map("n", "<leader>ff", ":Telescope find_files<CR>")
 map("n", "<leader>fg", ":Telescope live_grep<CR>")
 map("n", "<leader>fb", ":Telescope buffers<CR>")
