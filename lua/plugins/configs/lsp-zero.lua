@@ -60,7 +60,7 @@ return {
         documentation = cmp.config.window.bordered(),
       },
       mapping = cmp.mapping.preset.insert({
-        ["<Tab>"] = cmp.mapping.complete(),
+        ["<Tab>"] = cmp.mapping.confirm({ select=true }),
         ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
         ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
 
@@ -70,3 +70,6 @@ return {
     }
   end
 }
+
+
+
