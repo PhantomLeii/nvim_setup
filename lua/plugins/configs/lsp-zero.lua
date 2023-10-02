@@ -43,9 +43,45 @@ return {
       handlers = {
         lsp_zero.default_setup,
         lua_ls = function()
-          local capabilities = require("cmp_nvim_lsp").default_capabilities()
+          CAPABILITIES = require("cmp_nvim_lsp").default_capabilities()
           local lua_opts = require "lsp.configs.lua_ls"
           require "lspconfig".lua_ls.setup(lua_opts)
+        end,
+        bashls = function ()
+          require "lspconfig".bashls.setup({ capabilities=CAPABILITIES })
+        end,
+        cssls = function ()
+          require "lspconfig".cssls.setup({ capabilities=CAPABILITIES })
+        end,
+        emmet_ls = function ()
+          require "lspconfig".emmet_ls.setup({ capabilities=CAPABILITIES })
+        end,
+        html = function ()
+          require "lspconfig".html.setup({ capabilities=CAPABILITIES })
+        end,
+        jsonls = function ()
+          require "lspconfig".jsonls.setup({ capabilities=CAPABILITIES })
+        end,
+        tsserver = function ()
+          require "lspconfig".tsserver.setup({ capabilities=CAPABILITIES })
+        end,
+        marksman = function ()
+          require "lspconfig".marksman.setup({ capabilities=CAPABILITIES })
+        end,
+        pyright = function ()
+          require "lspconfig".pyright.setup({ capabilities=CAPABILITIES })
+        end,
+        sqlls = function ()
+          require "lspconfig".sqlls.setup({ capabilities=CAPABILITIES })
+        end,
+        taplo = function ()
+          require "lspconfig".taplo.setup({ capabilities=CAPABILITIES })
+        end,
+        tailwindcss = function ()
+          require "lspconfig".tailwindcss.setup({ capabilities=CAPABILITIES })
+        end,
+        rust_analyzer = function ()
+          require "lspconfig".rust_analyzer.setup({ capabilities=CAPABILITIES })
         end,
       },
     }
