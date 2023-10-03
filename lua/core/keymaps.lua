@@ -27,7 +27,7 @@ map("n", "<A-j>", "<ESC>:m .+1<CR>==gi")
 map("n", "<A-k>", "<ESC>:m .-2<CR>==gi")
 
 map("n", "<leader>w", ":w<CR>")
-map("n", "<leader>x", ":x<CR>")
+map("n", "<leader>x", ":w<CR>:bdelete<CR>")
 map("n", "<leader>q", ":q<CR>")
 map("n", "<leader>Q", ":q!<CR>")
 map("n", "<leader>e", ":NvimTreeToggle<CR>")
