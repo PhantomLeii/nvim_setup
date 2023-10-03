@@ -21,6 +21,7 @@ map("n", "<C-Right>", ":vertical resize -2<CR>")
 
 map("n", "<S-l>", ":bnext<CR>")
 map("n", "<S-h>", ":bprevious<CR>")
+map("n", "<C-x>", ":bdelete<R>")
 
 map("n", "<A-j>", "<ESC>:m .+1<CR>==gi")
 map("n", "<A-k>", "<ESC>:m .-2<CR>==gi")
