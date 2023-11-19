@@ -84,6 +84,9 @@ return {
         rust_analyzer = function ()
           require "lspconfig".rust_analyzer.setup({ capabilities=CAPABILITIES })
         end,
+        jdtls = function ()
+          require "lspconfig".jdtls.setup({ capabilities=CAPABILITIES })
+        end,
       },
     }
     local cmp = require "cmp"
