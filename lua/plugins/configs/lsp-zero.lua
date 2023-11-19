@@ -38,6 +38,7 @@ return {
         "taplo",
         "tailwindcss",
         "rust_analyzer",
+        "jdtls",
       },
 
       handlers = {

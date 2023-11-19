@@ -1,7 +1,7 @@
 require "core.keymaps"		-- import keymaps module
 require "core.options"		-- import options module
 
--- Plugins
+-- Bootstrap Lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -15,6 +15,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Plugins
 require "lazy".setup {
   require "plugins"       -- import all plugin configs
 }
