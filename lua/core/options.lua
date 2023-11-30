@@ -32,6 +32,7 @@ local options = {
 	writebackup = false,
 	wildmenu = true,
 	signcolumn = "yes",
+  breakindent = true,
 }
 
 vim.opt.shortmess:append "c"
