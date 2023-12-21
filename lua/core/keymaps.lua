@@ -18,12 +18,6 @@ local function map(m, k, v, opt, desc)
     end
 end
 
-local tel = require('telescope.builtin')
-map('n', '<leader>ff', tel.find_files, opts['silent'], 'Find files in root dir')
-map('n', '<leader>fg', tel.live_grep, opts['silent'], 'Search files through grep')
-map('n', '<leader>fb', tel.buffers, opts['silent'], 'Find through active buffers')
-map('n', '<leader>fh', tel.help_tags, opts['silent'], 'Search help tags')
-
 -- Insert mode
 map('i', 'jj', '<ESC>', opts['essen'], 'Tap "j" twice to toggle normal mode')
 map('i', 'vv', '<ESC>v', opts['essen'], 'Tap "v" twice to toggle visual mode')
