@@ -8,10 +8,10 @@ Lazy.setup({
     require('plugins.neodev'),
     require('plugins.comment'),
 
-    'tpope/vim-sleuth',                    -- detects tabstop & shiftwidth automatically
-    'christoomey/vim-tmux-navigator',      -- vim navigator
-    'szw/vim-maximizer',                   -- maximise & restore current window
-    { 'folke/which-key.nvim', opts = {} }, -- show pending keybinds
+    'tpope/vim-sleuth',                     -- detects tabstop & shiftwidth automatically
+    'christoomey/vim-tmux-navigator',       -- vim navigator
+    'szw/vim-maximizer',                    -- maximise & restore current window
+    { 'folke/which-key.nvim',  opts = {} }, -- show pending keybinds
 
     {
         'lukas-reineke/indent-blankline.nvim', -- add indentation guides even on blank lines
@@ -24,6 +24,9 @@ Lazy.setup({
         opts = {},
     },
 
-    require('plugins.nvim-tree'),  -- file explorer
-    require('plugins.bufferline'), -- minimal tab & buffers
+    require('plugins.nvim-tree'),                             -- file explorer
+    require('plugins.bufferline'),                            -- minimal tab & buffers
+    { 'ellisonleao/glow.nvim', config = true, cmd = 'Glow' }, -- Enable markdown preview with floating window
+
+    require('plugins.git'),                                   -- git intergrations
 })
