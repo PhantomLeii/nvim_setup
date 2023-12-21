@@ -6,4 +6,4 @@ end
 
 load('core.options')        -- import user options
 load('core.keymaps')        -- import user keymaps
-load('core.plugins')        -- import user plugin configs
+load('plugins')        -- import user plugin configs
