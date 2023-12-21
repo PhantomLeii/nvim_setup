@@ -7,7 +7,6 @@ Lazy.path = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'     -- Define lazy path
 Lazy.opts = {}                                              -- Define lazy options
 
 Lazy.setup({
-    -- All plugins here
+    Load('plugins.colorscheme'),
+    -- Load('plugins.neodev'),
 })
-
-vim.cmd.colorscheme('gruvbox')
