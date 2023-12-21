@@ -1,3 +1,11 @@
+-- Map space as leader key
+vim.g.mapleader=" "
+vim.g.maplocalleader=" "
+
+-- Disable netrw
+vim.g.loaded_netrw=1
+vim.g.loaded_netrwPlugin=1
+
 local opts = {
     backup=false,                           -- create backup file
     clipboard="unnamedplus",                -- access system clipboard
