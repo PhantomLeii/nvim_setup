@@ -1,5 +1,5 @@
 return {
-    'folke/neodev',
+    'folke/neodev.nvim',
     config = function ()
         require("neodev").setup({})
     end
