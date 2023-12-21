@@ -5,6 +5,14 @@ Lazy.opts = {}                                          -- Define lazy options
 
 Lazy.setup({
     require('plugins.colorscheme'),
+
+    {
+        'goolord/alpha-nvim',
+        config = function()
+            require('core.config').dashboard()
+        end
+    },
+
     require('plugins.neodev'),
     require('plugins.comment'),
 
@@ -26,9 +34,11 @@ Lazy.setup({
 
     require('plugins.nvim-tree'),                             -- file explorer
     require('plugins.bufferline'),                            -- minimal tab & buffers
+    
     { 'ellisonleao/glow.nvim', config = true, cmd = 'Glow' }, -- Enable markdown preview with floating window
 
     require('plugins.git'),                                   -- git intergrations
     require('plugins.lualine'),
     require('plugins.nvim-cmp'),                              -- enable completion menu
+    require('plugins.telescope'),                             -- fuzzy file finder
 })
