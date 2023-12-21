@@ -30,15 +30,19 @@ Lazy.setup({
         'windwp/nvim-autopairs', -- auto closing brackets & quotes
         event = 'InsertEnter',
         opts = {},
+        config = function()
+            require('nvim-autopairs').setup({})
+        end
     },
 
     require('plugins.nvim-tree'),                             -- file explorer
     require('plugins.bufferline'),                            -- minimal tab & buffers
-    
+
     { 'ellisonleao/glow.nvim', config = true, cmd = 'Glow' }, -- Enable markdown preview with floating window
 
     require('plugins.git'),                                   -- git intergrations
     require('plugins.lualine'),
     require('plugins.nvim-cmp'),                              -- enable completion menu
     require('plugins.telescope'),                             -- fuzzy file finder
+    require('plugins.lsp'),                                   -- enable lsp functionality
 })

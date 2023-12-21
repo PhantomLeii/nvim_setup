@@ -20,7 +20,7 @@ M.mason_servers = {
 
   prismals = {},
 
-  golangci_lint_ls = {},
+  golangci_lint_ls = {}, 
   gopls = {},
 
   pyright = {},

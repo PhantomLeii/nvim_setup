@@ -27,7 +27,7 @@ function Lazy.setup(plugins)
   vim.g.plugins_ready = true
 end
 
-Load = function (mod)
+Load = function(mod)
   package.loaded[mod] = nil
   require(mod)
 end
