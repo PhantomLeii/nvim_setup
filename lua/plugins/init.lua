@@ -30,4 +30,5 @@ Lazy.setup({
 
     require('plugins.git'),                                   -- git intergrations
     require('plugins.lualine'),
+    require('plugins.nvim-cmp'),                              -- enable completion menu
 })
