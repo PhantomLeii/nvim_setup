@@ -6,5 +6,4 @@ end
 
 load('core.options')        -- import user options
 load('core.keymaps')        -- import user keymaps
-
--- Bootstrap lazy
+load('core.plugins')        -- import user plugin configs

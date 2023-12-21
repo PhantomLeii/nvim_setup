@@ -36,6 +36,7 @@ local opts = {
     breakindent=true,                       -- allow smart wrapping (indent wrapped lines)
     scrolloff=8,                            -- leave space while scrolling
     guifont="JetbrainsMono:h17",            -- font used in grafical neovim applicaions
+    background="dark",                      -- Background in dark mode
     termguicolors=true,                     -- enable 256 colors
 }
 

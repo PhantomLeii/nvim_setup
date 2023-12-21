@@ -1,6 +1,6 @@
-local lazy = {}
+Lazy = {}
 
-function lazy.install(path)
+function Lazy.install(path)
   if not vim.loop.fs_stat(path) then
     print('Installing lazy.nvim....')
     vim.fn.system({
@@ -14,18 +14,20 @@ function lazy.install(path)
   end
 end
 
-function lazy.setup(plugins)
+function Lazy.setup(plugins)
   if vim.g.plugins_ready then
     return
   end
 
-  lazy.install(lazy.path)
+  Lazy.install(Lazy.path)
 
-  vim.opt.rtp:prepend(lazy.path)
+  vim.opt.rtp:prepend(Lazy.path)
 
-  require('lazy').setup(plugins, lazy.opts)
+  require('lazy').setup(plugins, Lazy.opts)
   vim.g.plugins_ready = true
 end
 
-lazy.path = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
-lazy.opts = {}
+Load = function (mod)
+  package.loaded[mod] = nil
+  require(mod)
+end
