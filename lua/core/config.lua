@@ -52,7 +52,9 @@ M.mason_servers = {
 }
 
 -- Tree-sitter-ensure-installed configuration
-M.ts_ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'typescript', 'vimdoc', 'vim' }
+M.ts_ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'typescript', 'bash',
+    'comment', 'css', 'html', 'javascript', 'jsdoc', 'jsonc', 'lua', 'markdown', 'regex', 'scss',
+    'toml', 'yaml', 'dart', 'dockerfile', 'java', }
 
 M.dashboard = function()
   local status_ok, alpha = pcall(require, "alpha")
