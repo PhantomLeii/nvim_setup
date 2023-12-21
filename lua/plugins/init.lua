@@ -29,4 +29,5 @@ Lazy.setup({
     { 'ellisonleao/glow.nvim', config = true, cmd = 'Glow' }, -- Enable markdown preview with floating window
 
     require('plugins.git'),                                   -- git intergrations
+    require('plugins.lualine'),
 })
