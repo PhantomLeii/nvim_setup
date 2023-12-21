@@ -46,8 +46,7 @@ return {
             filesystem_watchers = {
                 enable = true,
             },
-            actions = {
-                open_file = {
+            actions = { open_file = {
                     resize_window = true,
                 },
             },
