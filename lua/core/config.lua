@@ -7,6 +7,13 @@ M.mason_servers = {
   svelte = {},
   html = { filetypes = { 'html', 'twig', 'hbs' } },
   cssls = {},
+  emmet_ls = {
+    filetypes = { "aspnetcorerazor", "astro", "astro-markdown", "blade", "clojure", "django-html", "htmldjango", "edge",
+      "eelixir", "elixir", "ejs", "erb", "eruby", "gohtml", "gohtmltmpl", "haml", "handlebars", "hbs", "html",
+      "html-eex", "heex", "jade", "leaf", "liquid", "markdown", "mdx", "mustache", "njk", "nunjucks", "php", "razor",
+      "slim", "twig", "css", "less", "postcss", "sass", "scss", "stylus", "sugarss", "javascript", "javascriptreact",
+      "reason", "rescript", "typescript", "typescriptreact", "vue", "svelte" }
+  },
   tailwindcss = {
     filetypes = { "aspnetcorerazor", "astro", "astro-markdown", "blade", "clojure", "django-html", "htmldjango", "edge",
       "eelixir", "elixir", "ejs", "erb", "eruby", "gohtml", "gohtmltmpl", "haml", "handlebars", "hbs", "html",
@@ -20,13 +27,11 @@ M.mason_servers = {
 
   prismals = {},
 
-  golangci_lint_ls = {}, 
-  gopls = {},
+  -- gopls = {},
 
   pyright = {},
   pylsp = {},
 
-  bufls = {},
   bashls = {},
 
   clangd = {},
@@ -53,8 +58,8 @@ M.mason_servers = {
 
 -- Tree-sitter-ensure-installed configuration
 M.ts_ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'typescript', 'bash',
-    'comment', 'css', 'html', 'javascript', 'jsdoc', 'jsonc', 'lua', 'markdown', 'regex', 'scss',
-    'toml', 'yaml', 'dart', 'dockerfile', 'java', }
+  'comment', 'css', 'html', 'javascript', 'jsdoc', 'jsonc', 'lua', 'markdown', 'regex', 'scss',
+  'toml', 'yaml', 'dart', 'dockerfile', 'java', }
 
 M.dashboard = function()
   local status_ok, alpha = pcall(require, "alpha")
@@ -100,6 +105,5 @@ M.dashboard = function()
   dashboard.opts.opts.noautocmd = true
   alpha.setup(dashboard.opts)
 end
-
 
 return M

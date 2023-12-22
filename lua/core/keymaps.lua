@@ -1,19 +1,19 @@
 -- Map space as leader key
-vim.g.mapleader=" "
-vim.g.maplocalleader=" "
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 local opts = {
-    essen={ noremap=true, silent=true },
-    wrapOpt={ expr=true, silent=true },
-    silent={ silent=true },
-    noOpt={},
+    essen = { noremap = true, silent = true },
+    wrapOpt = { expr = true, silent = true },
+    silent = { silent = true },
+    noOpt = {},
 }
 
 local function map(m, k, v, opt, desc)
     if string.len(desc) < 1 then
         vim.keymap.set(m, k, v, opt)
     else
-        opt = { ['desc']=desc, silent=true }
+        opt = { ['desc'] = desc, silent = true }
         vim.keymap.set(m, k, v, opt)
     end
 end
@@ -41,5 +41,5 @@ map("n", "<C-k>", "<C-w>k", opts['essen'], 'Navigate to above window')
 map("n", "<C-l>", "<C-w>l", opts['essen'], 'Navigate to right window')
 map('n', '<leader>q', '<cmd>q!<CR>', opts['essen'], 'Forcefully quit')
 map('n', '<leader>w', '<cmd>w<CR>', opts['essen'], 'Write changes o file')
-map('n', '<leader>a', '<cmd>keepjumps normal! ggVG<CR>', opts['noOpts'],'Select all text in current buffer')
+map('n', '<leader>a', '<cmd>keepjumps normal! ggVG<CR>', opts['noOpts'], 'Select all text in current buffer')
 map('n', '<F4>', '<cmd>NvimTreeToggle<CR>', opts['essen'], 'Toggle nvim tree')
