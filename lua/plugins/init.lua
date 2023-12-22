@@ -9,7 +9,7 @@ Lazy.setup({
     {
         'goolord/alpha-nvim',
         config = function()
-            require('core.config').dashboard()
+            require('lsp.config').dashboard()
         end
     },
 
