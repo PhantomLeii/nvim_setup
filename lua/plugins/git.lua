@@ -35,12 +35,15 @@ return {
                 vim.keymap.set('n', '<leader>hS', gs.stage_buffer, { desc = "[h]unk [S]tage All" })
                 vim.keymap.set('n', '<leader>hu', gs.undo_stage_hunk, { desc = "[h]unk [u]ndo" })
                 vim.keymap.set('n', '<leader>hR', gs.reset_buffer, { desc = "[h]unk [R]eset buffer" })
-                vim.keymap.set('n', '<leader>hb', function() gs.blame_line { full = true } end, { desc = "[h]unk [b]lame" })
+                vim.keymap.set('n', '<leader>hb', function() gs.blame_line { full = true } end,
+                    { desc = "[h]unk [b]lame" })
                 vim.keymap.set('n', '<leader>hd', gs.diffthis, { desc = "[h]unk [d]iff" })
-                
-                vim.keymap.set('v', '<leader>hs', function() gs.stage_hunk { vim.fn.line('.'), vim.fn.line('v') } end, { desc = "[h]unk [s]tage selection" })
-                vim.keymap.set('v', '<leader>hr', function() gs.reset_hunk { vim.fn.line('.'), vim.fn.line('v') } end, { desc = "[h]unk [r]eset selection" })
+                vim.keymap.set('v', '<leader>hs', function() gs.stage_hunk { vim.fn.line('.'), vim.fn.line('v') } end,
+                    { desc = "[h]unk [s]tage selection" })
+                vim.keymap.set('v', '<leader>hr', function() gs.reset_hunk { vim.fn.line('.'), vim.fn.line('v') } end,
+                    { desc = "[h]unk [r]eset selection" })
             end,
         }
     },
 }
+
