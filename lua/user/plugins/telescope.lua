@@ -41,8 +41,8 @@ return {
           vimgrep_arguments = vimgrep_arguments,
           mappings = {
             i = {
-              ['<C-u>'] = true,
-              ['<C-d>'] = true,
+              ['<C-u>'] = false,
+              ['<C-d>'] = false,
             },
           },
         },
