@@ -32,3 +32,4 @@ map("i", "cc", "<ESC>vbdi")                         -- delete previous word
 map("v", "<", "<gv")                                -- Unindent
 map("v", ">", ">gv")                                -- Indent
 
+map("", "<F4>", ":NvimTreeToggle<CR>")              -- Toggle nvim-tree
