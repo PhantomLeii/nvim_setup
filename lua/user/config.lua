@@ -21,12 +21,12 @@ M.mason_servers = {
       "reason", "rescript", "typescript", "typescriptreact", "vue", "svelte" }
   },
   phpactor = {},
-  ruby_ls = {}
+  ruby_ls = {},
 
   jsonls = {},
-  taplo = {}
+  taplo = {},
 
-  sqlls = {}
+  sqlls = {},
 
   docker_compose_language_service = {},
   dockerls = {},
@@ -44,8 +44,8 @@ M.mason_servers = {
 
   clangd = {},
   java_language_server = {},
-  rust_analyzer = {}
-  omnisharp = {}
+  rust_analyzer = {},
+  omnisharp = {},
 
   lua_ls = {
     Lua = {
