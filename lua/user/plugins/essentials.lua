@@ -143,8 +143,7 @@ return {
     config = function()
       local bufferline = require 'bufferline'
       bufferline.setup {
-        style_preset = bufferline.style_preset.minimal,
-        highlights = {}
+        options = { style_preset = bufferline.style_preset.minimal },
       }
     end,
   },
