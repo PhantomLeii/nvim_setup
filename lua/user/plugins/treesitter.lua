@@ -8,7 +8,7 @@ return {
     },
     build = ':TSUpdate',
     config = function()
-      local config = require 'config'
+      local config = require 'user.config'
       require('nvim-treesitter.configs').setup {
         ensure_installed = config.ts_ensure_installed,
 

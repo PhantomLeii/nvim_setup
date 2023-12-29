@@ -20,10 +20,10 @@ M.mason_servers = {
       "slim", "twig", "css", "less", "postcss", "sass", "scss", "stylus", "sugarss", "javascript", "javascriptreact",
       "reason", "rescript", "typescript", "typescriptreact", "vue", "svelte" }
   },
-  phpactor = {},
-  ruby_ls = {},
+  -- phpactor = {},
+  -- ruby_ls = {},
 
-  jsonls = {},
+  -- jsonls = {},
   taplo = {},
 
   sqlls = {},
@@ -33,19 +33,19 @@ M.mason_servers = {
 
   prismals = {},
 
-  golangci_lint_ls = {},
-  gopls = {},
+  -- golangci_lint_ls = {},
+  -- gopls = {},
 
   pyright = {},
   pylsp = {},
 
-  bufls = {},
+  -- bufls = {},
   bashls = {},
 
   clangd = {},
-  java_language_server = {},
-  rust_analyzer = {},
-  omnisharp = {},
+  -- java_language_server = {},
+  -- rust_analyzer = {},
+  -- omnisharp = {},
 
   lua_ls = {
     Lua = {

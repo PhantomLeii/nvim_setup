@@ -10,6 +10,7 @@ return {
         theme = "gruvbox",
         component_separators = { left = '', right = '' },
         section_separators = { left = '', right = '' },
+        globalstatus = true,
       },
       sections = {
         lualine_a = { 'mode' },
@@ -27,7 +28,6 @@ return {
         lualine_y = {},
         lualine_z = { 'location' },
       },
-      global_status = true,
       tabline = {},
       extensions = {},
     },
