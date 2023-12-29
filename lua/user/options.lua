@@ -32,8 +32,9 @@ local options = {
   signcolumn = "yes",                      -- always show the sign column, otherwise it would shift the text each time
   wrap = true,                            -- display lines as one long line
   breakindent = true,
-  scrolloff = 8,                           -- is one of my fav
+  scrolloff = 8,                           -- stay 8 lines above scroll point
   sidescrolloff = 8,
+  background = "dark",                     -- Dark background theme
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
 }
 

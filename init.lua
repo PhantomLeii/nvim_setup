@@ -16,4 +16,6 @@ vim.opt.rtp:prepend(lazypath)
 require('user.options')
 require('user.keymaps')
 
-require('lazy').setup()
+require('lazy').setup "user.plugins"
+
+vim.cmd("colorscheme gruvbox")

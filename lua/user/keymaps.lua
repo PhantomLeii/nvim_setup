@@ -31,3 +31,4 @@ map("i", "cc", "<ESC>vbdi")                         -- delete previous word
 
 map("v", "<", "<gv")                                -- Unindent
 map("v", ">", ">gv")                                -- Indent
+
