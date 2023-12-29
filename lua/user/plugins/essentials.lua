@@ -144,7 +144,7 @@ return {
       local bufferline = require 'bufferline'
       bufferline.setup {
         style_preset = bufferline.style_preset.minimal,
-        -- highlights = {}
+        highlights = {}
       }
     end,
   },

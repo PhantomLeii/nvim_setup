@@ -7,7 +7,8 @@ end
 
 map("n", "<leader>a", "ggVG")                       -- Select all
 map("n", "<leader>w", ":w<CR>")                     -- Write to disk
-map("n", "<leader>q", ":q!<CR>")                    -- Quit buffer
+map("n", "<leader>q", ":q!<CR>")                    -- Quit
+map("n", "<leader>x", ":bdelete<CR>")               -- Close current buffer
 
 map("n", "<C-h>", "<C-w>h")                         -- Navigate left
 map("n", "<C-j>", "<C-w>j")                         -- Navigate down
