@@ -18,4 +18,4 @@ require('user.keymaps')
 
 require('lazy').setup "user.plugins"
 
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme catppuccin")
